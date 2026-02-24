@@ -52,13 +52,6 @@ Window:EditOpenButton({
     Draggable = true,
 })
 
-Window:SetIconSize(48)
-
-local executor = identifyexecutor and identifyexecutor() or "Unknown"
-if type(executor) == "string" then
-    Window:Tag({ Title = executor })
-end
-
 local DcTab = Window:Tab({Title = "Discord", Icon = "link"})
 local MainTab = Window:Tab({Title = "Player", Icon = "player"})
 local EspTab = Window:Tab({Title = "ESP", Icon = "star"})
